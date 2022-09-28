@@ -1,0 +1,15 @@
+<div>
+    <div>Enter Age: <input type="text"[(ngModel)]=age></div><br/>
+    <div *ngIf="age < 18; else elseAgeBlock">
+        <b>Not Eligible to vote</b>
+
+    </div>
+    <ng-template #elseAgeBlock>
+        <b>Eligible to vote</b>
+    </ng-template>
+</div>
+<!--ngStyle example-->
+<div [ngStyle]="{'background-color':'green'}">
+    <h1>This is my Example</h1>
+    <p>Show me this</p>
+</div>
